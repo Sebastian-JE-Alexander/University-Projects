@@ -1,0 +1,1 @@
+"./ball_movement.obj" "./pong.obj" "./hal_libraries/hal_UCS.obj" "./hal_libraries/hal_lcd.obj" "./hal_libraries/hal_lcd_fonts.obj" "./hal_libraries/hal_pmm.obj" "../lnk_msp430f5438a.cmd" -llibmath.a -llibc.a 
