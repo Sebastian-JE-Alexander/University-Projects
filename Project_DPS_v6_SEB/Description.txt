@@ -1,0 +1,2 @@
+Coursework for my Digital Programmable Systems 2 module in 3rd year.
+This is a simple pong game done in C but more specifically deployed onto a MSP430 board for testing and demo purposes for the class. 
