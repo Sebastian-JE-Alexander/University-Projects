@@ -1,0 +1,405 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 24 12:05:55 2023
+# Process ID: 6168
+# Log file: C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.runs/synth_1/Counter_wrapper.vds
+# Journal file: C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Counter_wrapper.tcl -notrace
+Command: synth_design -top Counter_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2018.01' and will expire in -2092 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 241.496 ; gain = 63.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Counter_wrapper' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 17 - type: integer 
+	Parameter COUNTER_MAX bound to: 99999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-350] instance 'Bit17Counter' of module 'Generic_Counter' requires 5 connections, but only 4 given [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:55]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized0' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized0' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-350] instance 'Bit4Counter0' of module 'Generic_Counter' requires 5 connections, but only 4 given [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:66]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized1' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized1' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'COUNT' does not match port width (4) of module 'Generic_Counter__parameterized1' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:82]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized2' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized2' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'COUNT' does not match port width (4) of module 'Generic_Counter__parameterized2' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:94]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized3' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized3' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'COUNT' does not match port width (4) of module 'Generic_Counter__parameterized3' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:106]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized4' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized4' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'COUNT' does not match port width (4) of module 'Generic_Counter__parameterized4' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:117]
+WARNING: [Synth 8-350] instance 'Bit4Counter4' of module 'Generic_Counter' requires 5 connections, but only 4 given [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:113]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized5' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized5' (1#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'COUNT' does not match port width (2) of module 'Generic_Counter__parameterized5' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:129]
+WARNING: [Synth 8-350] instance 'Bit2Counter' of module 'Generic_Counter' requires 5 connections, but only 4 given [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:125]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_4way' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:40]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_4way' (2#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'CONTROL' does not match port width (2) of module 'Multiplexer_4way' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:141]
+INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/salexa211/Downloads/seven_seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/salexa211/Downloads/seven_seg.v:34]
+WARNING: [Synth 8-567] referenced signal 'x' should be on the sensitivity list [C:/Users/salexa211/Downloads/seven_seg.v:32]
+WARNING: [Synth 8-567] referenced signal 'dot' should be on the sensitivity list [C:/Users/salexa211/Downloads/seven_seg.v:32]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg' (3#1) [C:/Users/salexa211/Downloads/seven_seg.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'SEG_SELECT_IN' does not match port width (2) of module 'seven_seg' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:152]
+WARNING: [Synth 8-689] width (5) of port connection 'an' does not match port width (8) of module 'seven_seg' [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:155]
+INFO: [Synth 8-256] done synthesizing module 'Counter_wrapper' (4#1) [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 275.738 ; gain = 98.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Bit2Counter:RESET to constant 0 [C:/Users/salexa211/Desktop/DDCA/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:125]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 275.738 ; gain = 98.199
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/salexa211/Downloads/MasterXDC_Nexys4.xdc]
+Finished Parsing XDC File [C:/Users/salexa211/Downloads/MasterXDC_Nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 570.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Generic_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Generic_Counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Generic_Counter__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Multiplexer_4way 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module seven_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design Counter_wrapper has port SEG_SELECT[4] driven by constant 1
+WARNING: [Synth 8-3917] design Counter_wrapper has port SEG_SELECT[3] driven by constant 1
+WARNING: [Synth 8-3917] design Counter_wrapper has port SEG_SELECT[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter2/Trigger_out_reg ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter3/count_value_reg[3] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter3/count_value_reg[2] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter3/count_value_reg[1] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter3/count_value_reg[0] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter3/Trigger_out_reg ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter4/count_value_reg[3] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter4/count_value_reg[2] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter4/count_value_reg[1] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter4/count_value_reg[0] ) is unused and will be removed from module Counter_wrapper.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter2/count_value_reg[3] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter2/count_value_reg[2] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit4Counter2/count_value_reg[1] ) is unused and will be removed from module Counter_wrapper.
+WARNING: [Synth 8-3332] Sequential element (\Bit2Counter/count_value_reg[1] ) is unused and will be removed from module Counter_wrapper.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    21|
+|4     |LUT2   |     2|
+|5     |LUT3   |     4|
+|6     |LUT4   |     4|
+|7     |LUT5   |     1|
+|8     |LUT6   |     4|
+|9     |FDRE   |    30|
+|10    |IBUF   |     3|
+|11    |OBUF   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------------------+------+
+|      |Instance       |Module                          |Cells |
++------+---------------+--------------------------------+------+
+|1     |top            |                                |    87|
+|2     |  Bit17Counter |Generic_Counter                 |    44|
+|3     |  Bit2Counter  |Generic_Counter__parameterized5 |     3|
+|4     |  Bit4Counter0 |Generic_Counter__parameterized0 |    10|
+|5     |  Bit4Counter1 |Generic_Counter__parameterized1 |    10|
+|6     |  Bit4Counter2 |Generic_Counter__parameterized2 |     3|
++------+---------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 570.188 ; gain = 82.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 570.188 ; gain = 392.648
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 570.188 ; gain = 379.785
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 570.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 24 12:06:10 2023...
