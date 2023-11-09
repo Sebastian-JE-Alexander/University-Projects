@@ -1,2 +1,2 @@
 This was done as a mini project during one of the labs in my Digital Design and Computer Architecture module in 4th year.
-This is a verilog design of a simple decimal counter design that would be improved later on in theb module into a Digital watch.
+This is a verilog design of a simple decimal counter design that would be improved later on in the module into a Digital watch.
