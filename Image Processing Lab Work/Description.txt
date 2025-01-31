@@ -1,3 +1,6 @@
 Overview: My work done during my lab sessions in my Machine Vision and Image processing module with the use of python in the Google Colab environment
 
-1- The ImageProcess_Lab1 code deals is a script where the user can upload a file of their choosing for the purpose of image processing. The code first displays the uploaded image and stores it uncompressed into a Numpy array. The Image dimensions are also obtained from the image such as the Horizontal, vertical and  depth (channels). The next section of the code then processes it by using the HSV(Hue, Saturation and Value) components of the image and displays them seperately. 
+1- The ImageProcess_Lab1 code deals is a script where the user can upload a file of their choosing for the purpose of image processing.
+The code first displays the uploaded image and stores it uncompressed into a Numpy array. 
+The Image dimensions are also obtained from the image such as the Horizontal, vertical and  depth (channels). 
+The next section of the code then processes it by using the HSV(Hue, Saturation and Value) components of the image and displays them seperately. 
