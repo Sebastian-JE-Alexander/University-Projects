@@ -1,0 +1,1 @@
+This was part of our Introduction to machine learning by seeing how basic feature extractions work such as HOG and canny edge detection. 
