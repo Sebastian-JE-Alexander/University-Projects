@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 31 13:01:05 2023
+# Process ID: 6484
+# Log file: C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.runs/impl_1/Counter_wrapper.vdi
+# Journal file: C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Counter_wrapper.tcl -notrace

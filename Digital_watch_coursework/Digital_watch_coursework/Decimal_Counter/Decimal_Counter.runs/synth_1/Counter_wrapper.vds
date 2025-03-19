@@ -1,0 +1,784 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 31 13:05:41 2023
+# Process ID: 9800
+# Log file: C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.runs/synth_1/Counter_wrapper.vds
+# Journal file: C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Counter_wrapper.tcl -notrace
+Command: synth_design -top Counter_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2018.01' and will expire in -2099 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 242.016 ; gain = 63.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Counter_wrapper' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 17 - type: integer 
+	Parameter COUNTER_MAX bound to: 99999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-350] instance 'Bit17Counter' of module 'Generic_Counter' requires 6 connections, but only 5 given [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:61]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized0' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized0' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-350] instance 'Bit4Counter0' of module 'Generic_Counter' requires 6 connections, but only 5 given [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:73]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized1' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized1' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized2' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 3 - type: integer 
+	Parameter COUNTER_MAX bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized2' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'COUNT' does not match port width (3) of module 'Generic_Counter__parameterized2' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:104]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized3' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter COUNTER_MAX bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized3' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized4' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 3 - type: integer 
+	Parameter COUNTER_MAX bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized4' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'COUNT' does not match port width (3) of module 'Generic_Counter__parameterized4' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:129]
+WARNING: [Synth 8-350] instance 'Bit4Counter4' of module 'Generic_Counter' requires 6 connections, but only 5 given [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:124]
+INFO: [Synth 8-638] synthesizing module 'Generic_Counter__parameterized5' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generic_Counter__parameterized5' (1#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Generic_Counter.v:23]
+WARNING: [Synth 8-350] instance 'Bit2Counter' of module 'Generic_Counter' requires 6 connections, but only 4 given [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:137]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer_4way' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:40]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer_4way' (2#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Multiplexer_4way.v:23]
+INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/imports/Downloads/seven_seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/imports/Downloads/seven_seg.v:34]
+WARNING: [Synth 8-567] referenced signal 'x' should be on the sensitivity list [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/imports/Downloads/seven_seg.v:32]
+WARNING: [Synth 8-567] referenced signal 'dot' should be on the sensitivity list [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/imports/Downloads/seven_seg.v:32]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg' (3#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/imports/Downloads/seven_seg.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'an' does not match port width (8) of module 'seven_seg' [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:167]
+INFO: [Synth 8-256] done synthesizing module 'Counter_wrapper' (4#1) [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 276.277 ; gain = 98.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Bit2Counter:RESET to constant 0 [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:137]
+WARNING: [Synth 8-3295] tying undriven pin Bit2Counter:DIRECT to constant 0 [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/sources_1/new/Counter_wrapper.v:137]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 276.277 ; gain = 98.195
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc]
+Finished Parsing XDC File [C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 584.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 7 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 14 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 60 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 61 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 62 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 63 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 64 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 65 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 66 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 68 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 84 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 84 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Generic_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Generic_Counter__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer_4way 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module seven_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 7 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 14 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 60 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 61 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 62 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 62 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 63 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 64 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 65 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 65 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 66 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 68 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 84 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+incorrect set of required parameters for "set_property" at line 84 of file C:/Users/salexa211/Desktop/Decimal_Counter/Decimal_Counter.srcs/constrs_1/imports/Downloads/MasterXDC_Nexys4.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    20|
+|4     |LUT2   |     8|
+|5     |LUT3   |     2|
+|6     |LUT4   |     9|
+|7     |LUT5   |     7|
+|8     |LUT6   |    15|
+|9     |FDRE   |    42|
+|10    |IBUF   |     4|
+|11    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------------------+------+
+|      |Instance       |Module                          |Cells |
++------+---------------+--------------------------------+------+
+|1     |top            |                                |   124|
+|2     |  Bit17Counter |Generic_Counter                 |    44|
+|3     |  Bit2Counter  |Generic_Counter__parameterized5 |    19|
+|4     |  Bit4Counter0 |Generic_Counter__parameterized0 |    10|
+|5     |  Bit4Counter1 |Generic_Counter__parameterized1 |    10|
+|6     |  Bit4Counter2 |Generic_Counter__parameterized2 |     8|
+|7     |  Bit4Counter3 |Generic_Counter__parameterized3 |    10|
+|8     |  Bit4Counter4 |Generic_Counter__parameterized4 |     6|
++------+---------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 584.359 ; gain = 82.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 584.359 ; gain = 406.277
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 584.359 ; gain = 394.238
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 584.359 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 13:05:57 2023...
